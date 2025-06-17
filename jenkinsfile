@@ -7,7 +7,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/Almisha/jenkins-lab.gitt',
+                        url: 'https://github.com/Almisha/jenkins-lab.git',
                         credentialsId: 'github_token' // 👈 este es el ID que registraste en Jenkins
                     ]]
                 ])
